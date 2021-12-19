@@ -5,14 +5,14 @@
 }
 
 html {
-    font-family: Kanit, sans-serif;
+    font-family: Poppins-Regular;
     color: $clr1;
 }
 
 body {
     margin: 0;
     padding: 0;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 img {
@@ -29,10 +29,12 @@ h6 {
     font-weight: 400;
     font-family: Kanit;
     text-transform: capitalize;
+    font-family: Poppins-Regular;
 }
 
 li {
     list-style: none;
+    font-family: Poppins-Regular;
 }
 
 a {
