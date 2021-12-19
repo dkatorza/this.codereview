@@ -1,14 +1,12 @@
 .breadcrumbs-wrapper {
     display: flex;
-    margin-left: 1rem;
+    // margin-left: 1rem;
 
     & > .path {
-        // margin-left: 2px;
         transform: skew(20deg);
         font-style: italic;
         font-size: 18px;
         color: #1f1f1f;
-        padding:0 0.5rem;
         height: 35px;
         display: flex;
         justify-content: center;
