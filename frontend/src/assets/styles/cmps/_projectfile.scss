@@ -1,8 +1,13 @@
 .project-file-wrapper{
-
     .svg{
-        fill: whitesmoke;
+        fill: #ffd166;
         width: 65px;
         height: 65px;
+        display: flex;
+        align-items: center;
+
+        &:hover{
+           fill: $mainclr1; 
+        }
     }
 }

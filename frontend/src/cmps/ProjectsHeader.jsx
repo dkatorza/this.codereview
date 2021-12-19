@@ -1,4 +1,4 @@
-import logo from '../assets/img/projectsheaderlogo1.png'
+import logo from '../assets/img/projectsheaderlogo1green.png'
 import { HeaderNavbar } from '../cmps/HeaderNavbar'
 
 export const ProjectsHeader = () => {
@@ -7,7 +7,10 @@ export const ProjectsHeader = () => {
             <div className="projects-header-logo">
                 <img src={logo} alt="this.codereview logo" />
             </div>
-            <HeaderNavbar/>
+            <div className="project-header-side">
+                <input type="text" placeholder="Search project..." />
+                <HeaderNavbar />
+            </div>
         </section>
     )
 }

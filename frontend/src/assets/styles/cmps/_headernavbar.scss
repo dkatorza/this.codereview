@@ -1,11 +1,10 @@
 .header-navbar-wrapper {
     display: flex;
-    background-color: #1f1f1f;
     gap: 0.5rem;
     margin-inline-end: 0.5rem;
 
     .svg {
-        fill: #ffffff;
+        fill: #fb8500;
     }
 
     ul {
@@ -18,11 +17,12 @@
         display: flex;
         gap: 0.2rem;
         align-items: center;
-        color: #f9015f;
+        color: $clr1;
+        cursor: pointer;
         
 
         & > span {
-            font-size: 1.5rem;
+            font-size: rem(18px);
         }
     }
 }

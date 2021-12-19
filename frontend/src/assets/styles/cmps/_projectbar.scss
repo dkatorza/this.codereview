@@ -1,0 +1,10 @@
+.project-bar{
+    display: grid;
+    justify-items: end;
+    align-items: center;
+    padding: 1rem;
+    column-gap: 0.5rem;
+    grid-template-columns:
+        minmax(auto, auto);
+       
+}
