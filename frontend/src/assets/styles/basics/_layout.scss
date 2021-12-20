@@ -1,7 +1,9 @@
-.app-general {  
+.app-general {
     height: calc(100vh);
     background-color: $bgrclr1;
+    opacity: 0.9;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 

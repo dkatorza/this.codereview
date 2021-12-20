@@ -1,13 +1,13 @@
 .project-file-wrapper{
     .svg{
-        fill: #ffd166;
+        fill: $clrYellowlight;
         width: 65px;
         height: 65px;
         display: flex;
         align-items: center;
 
         &:hover{
-           fill: $mainclr1; 
+           fill: $clrLightgreen; 
         }
     }
 }

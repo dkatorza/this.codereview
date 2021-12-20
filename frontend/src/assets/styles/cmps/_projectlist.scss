@@ -6,15 +6,17 @@
     overflow-y: auto;
     max-height: 550px;
 
+
     .project-list-item {
-        background-color: #1b1b1b;
-        // border: 1px solid #ffd166;
+        background-color: $clrBlackExtra;
         margin-bottom: 0.5rem;
         min-height: 80px;
         padding: 0.5rem;
+        cursor: pointer;
 
         &:hover{
-            background-color: #ffd166d8;
+            background-color: $clrYellowlight;
+            color: $clrBlack;
             transition:all .5s ease-in-out;
         }
     }
@@ -23,21 +25,29 @@
 
 .project-list-header{
     display: flex;
-    padding: 0.5rem;
-    // width: 100%;
-    background-color:#06d6a0 ;
+    padding:0 0.5rem;
+    background-color:$clrLightgreen ;
+    min-height: 50px;
     margin-bottom: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
 
     & > .list-header-item{
-        height: 80px;
         width: 100%;
-        color: black;
+        color: $clrBlack;
         display: flex;
         text-align: center;
         align-items: center;
         justify-content: center;
+        font-size: rem(20px);
+        cursor: pointer;
+
+        &:hover {
+            font-weight: 600;
+            background-color: $clrRedish;
+            transition:.2s ease-in-out;
+         
+        }
 
     }
 }

@@ -4,7 +4,7 @@ export const BreadCrumbs = () => {
             <div className="path" style={{color:'whitesmoke'}}>tcr:\</div>
             <div className="path" style={{color:'gold'}}>demoproject\</div>
             <div className="path" style={{color:'tomato'}}>demofile\</div>
-            <div className="path" style={{color:'lightblue'}}>democr <span>&gt;</span></div>
+            <div className="path" style={{color:'red'}}>democr <span>&gt;</span></div>
         </div>
     )
 }
