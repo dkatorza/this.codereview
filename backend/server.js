@@ -42,7 +42,7 @@ if (process.env.NODE_ENV === 'production') {
 // ROUTES REQ
 const authRoutes = require('./api/auth/auth.routes')
 const userRoutes = require('./api/user/user.routes')
-const boardRoutes = require('./api/board/project.routes')
+const projectRoutes = require('./api/project/project.routes')
 
 
 
@@ -59,7 +59,7 @@ app.get('/api/setup-session', (req, res) => {
 // USING ROUTES
 app.use('/api/auth', authRoutes)
 app.use('/api/user', userRoutes)
-app.use('/api/project', boardRoutes)
+app.use('/api/project', projectRoutes)
 
 
 app.get('/**', (req, res) => {
