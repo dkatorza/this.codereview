@@ -13,8 +13,14 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: url('../../img/testimg.jpg');
-    backdrop-filter:blur(55px);
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(46,9,121,1) 35%, rgba(162,30,168,1) 58%, rgba(0,0,0,1) 100%);
+    // background-image: url('../../img/defaultbgpic.jpg');
+    background-repeat:no-repeat;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    
 }
 
 

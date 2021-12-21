@@ -1,4 +1,3 @@
-import { BreadCrumbs } from "../cmps/Breadcrumbs"
 import { ProjectBar } from "../cmps/ProjectBar"
 import { ProjectList } from "../cmps/ProjectsList"
 

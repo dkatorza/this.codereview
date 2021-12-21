@@ -1,11 +1,11 @@
 import { BreadCrumbs } from "./Breadcrumbs"
-import { ProjectAdd } from "./ProjectAdd"
+import { ReactComponent as CreateProject } from '../assets/img/createproject.svg'
 
 export const ProjectBar = () => {
     return (
         <>  
         <BreadCrumbs/>
-        <ProjectAdd/>
+        <div className="project-add-wrapper"><CreateProject className="svg pointer"/></div>
         </>
     )
 }
