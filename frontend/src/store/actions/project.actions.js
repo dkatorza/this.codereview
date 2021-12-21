@@ -1,9 +1,12 @@
 import { projectService } from "../../services/project.service.js";
 
+
 export function onSaveProject(project) {
+    console.log('project',project);
     return async dispatch => {
         try {
             const savedProject = await projectService.save(project)
+            console.log('savedProject',savedProject);
             dispatch({
                 type: 'SAVE_PROJECT',
                 project: savedProject

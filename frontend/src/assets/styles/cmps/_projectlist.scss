@@ -2,12 +2,15 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    margin-right: 1rem;
+    // margin-right: 1rem;
     overflow-y: auto;
     max-height: 550px;
 
 
     .project-list-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background-color: $clrBlackExtra;
         margin-bottom: 0.5rem;
         min-height: 80px;
@@ -18,6 +21,12 @@
             background-color: $clrYellowlight;
             color: $clrBlack;
             transition:all .5s ease-in-out;
+        }
+
+        .list-item-field{
+            display: flex;
+            justify-content: center;
+            width: 100%;
         }
     }
 

@@ -1,11 +1,11 @@
 import { BreadCrumbs } from "./Breadcrumbs"
-import { ProjectFile } from "./ProjectFile"
+import { ProjectAdd } from "./ProjectAdd"
 
 export const ProjectBar = () => {
     return (
         <>  
         <BreadCrumbs/>
-        <ProjectFile/>
+        <ProjectAdd/>
         </>
     )
 }

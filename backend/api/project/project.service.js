@@ -56,10 +56,10 @@ async function save(project) {
                 members: [project.createdBy],
                 codeReview: [],
                 activities: [],
-                importance: {},
-                startDate: {},
-                endDate: {},
-                lastChanged: {}
+                importance,
+                startDate,
+                endDate,
+                lastChanged
             }
             const collection = await dbService.getCollection('project')
             await collection.insertOne(savedProject)
