@@ -7,6 +7,7 @@ const initialState = {
     currPopover: {
         name: ''
     },
+    isOverlayOpen: false
 }
 
 export function appReducer(state = initialState, action) {
@@ -16,9 +17,9 @@ export function appReducer(state = initialState, action) {
         case 'LOGIN_ERR':
             return { ...state, loginErr: action.err }
         case 'SET_POPOVER':
-            return { ...state, currPopover: { name: action.popoverName}}
+            return { ...state, currPopover: { name: action.popoverName}, isOverlayOpen: true}
         case 'CLOSE_POPOVER':
-            return { ...state, currPopover: { name: ''}}
+            return { ...state, currPopover: { name: ''}, isOverlayOpen: false}
         default:
             return state
     }
