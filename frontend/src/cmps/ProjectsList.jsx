@@ -8,13 +8,10 @@ export const ProjectList = () => {
 
     const dispatch = useDispatch()
     const { projects } = useSelector(state => state.projectModule)
-    
+
     useEffect(() => {
         dispatch(loadProjects())
     }, [projects])
-
-    
-   
 
     return (
         <>
@@ -34,10 +31,10 @@ export const ProjectList = () => {
                     >
                         <div className="list-item-field">{project.title}</div>
                         <div className="list-item-field">{project.importance}</div>
-                        <div className="list-item-field"> {project.startDate}</div>
-                        <div className="list-item-field">{project.endDate}</div>
+                        <div className="list-item-field"> {new Date(project.startDate).toLocaleDateString()}</div>
+                        <div className="list-item-field">{new Date(project.endDate).toLocaleDateString() }</div>
                         <div className="list-item-field"> {project.members}</div>
-                        <div className="list-item-field"> {project.lastChanged}</div>
+                        <div className="list-item-field"> {new Date(project.lastChanged).toLocaleString()}</div>
                     </div>
                 ))}
             </div>

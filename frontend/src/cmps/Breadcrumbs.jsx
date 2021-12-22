@@ -1,10 +1,10 @@
 export const BreadCrumbs = () => {
     return (
         <div className="breadcrumbs-wrapper">
-            <div className="path" style={{color:'whitesmoke'}}>tcr:\</div>
-            <div className="path" style={{color:'gold'}}>demoproject\</div>
-            <div className="path" style={{color:'tomato'}}>demofile\</div>
-            <div className="path" style={{color:'red'}}>democr <span>&gt;</span></div>
+            <div className="path-start">tcr:</div>
+            <div className="path-projects">demoproject</div>
+            <div className="path-project-file">demofile</div>
+            <div className="path-project-cr">democr <span>&gt;</span></div>
         </div>
     )
 }

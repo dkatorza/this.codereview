@@ -59,7 +59,7 @@ async function save(project) {
                 importance,
                 startDate,
                 endDate,
-                lastChanged
+                lastChanged:Date.now()
             }
             const collection = await dbService.getCollection('project')
             await collection.insertOne(savedProject)

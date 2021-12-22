@@ -4,6 +4,9 @@ const initialState = {
     projectspace: [],
     loggedInUser: userService.getLoggedinUser(),
     loginErr: null,
+    currPopover: {
+        name: ''
+    },
 }
 
 export function appReducer(state = initialState, action) {
@@ -12,6 +15,10 @@ export function appReducer(state = initialState, action) {
             return { ...state, loggedInUser: action.user, loginErr: null }
         case 'LOGIN_ERR':
             return { ...state, loginErr: action.err }
+        case 'SET_POPOVER':
+            return { ...state, currPopover: { name: action.popoverName}}
+        case 'CLOSE_POPOVER':
+            return { ...state, currPopover: { name: ''}}
         default:
             return state
     }

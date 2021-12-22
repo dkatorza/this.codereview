@@ -1,20 +1,154 @@
 .breadcrumbs-wrapper {
     display: flex;
 
-    & > .path {
-        transform: skew(20deg);
-        font-style: italic;
-        font-size: rem(18px);
-        color: $clrBlack;
-        height: 35px;
+    .path-start {
+        min-width: 100px;
+        height: 40px;
+        background: #ff3884;
+        position: relative;
         display: flex;
         justify-content: center;
-        align-items: center;    
+        align-items: center;
+        color: $clrWhite;
+        font-size: rem(20px);
 
-        & >span {
-            color: $clrWhite;
-            font-size: rem(28px);
+    
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 25px solid rgb(5, 5, 5);
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            opacity: 0.8;
+        }
+    
+        &:before {
+            content: "";
+            position: absolute;
+            right: -25px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 25px solid #ff3884;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
         }
     }
-        
+    
+    .path-projects {
+        min-width: 100px;
+        height: 40px;
+        background: #e7e41c;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $clrBlack;
+        font-size: rem(20px);
+        padding-left: 2rem;
+    
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 25px solid #ff3884;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+    
+        &:before {
+            content: "";
+            position: absolute;
+            right: -25px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 25px solid #e7e41c;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+    }
+    
+    .path-project-file {
+        min-width: 100px;
+        height: 40px;
+        background: #bf72ff;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $clrWhite;
+        font-size: rem(20px);
+        padding-left: 2rem;
+    
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 25px solid #e7e41c;
+            border-top: 20px solid transparent;
+            border-bottom: 21px solid transparent;
+        }
+    
+        &:before {
+            content: "";
+            position: absolute;
+            right: -25px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 25px solid #bf72ff;
+            border-top: 20px solid transparent;
+            border-bottom: 21px solid transparent;
+        }
+    }
+    
+    .path-project-cr {
+        min-width: 100px;
+        height: 40px;
+        background: #ececec;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $clrBlack;
+        font-size: rem(20px);
+        padding-left: 2rem;
+    
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 25px solid #bf72ff;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+    
+        &:before {
+            content: "";
+            position: absolute;
+            right: -25px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 25px solid #ececec;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+    }
+    
 }
+

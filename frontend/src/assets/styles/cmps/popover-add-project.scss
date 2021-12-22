@@ -1,0 +1,23 @@
+.add-project-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .add-project-field {
+        margin: 0 0 0.5rem 0;
+    }
+
+    .add-project-bottom {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        .button {
+            width: 80px;
+            height: 40px;
+        }
+
+        .error-msg{
+            color: $danger;
+        }
+    }
+}
