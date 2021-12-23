@@ -1,8 +1,8 @@
+import { Link } from 'react-router-dom'
 import { useEffect } from "react"
 import { useDispatch, useSelector } from 'react-redux';
 import { loadProjects } from "../store/actions/project.actions"
-
-
+import { ProjectListPreview } from "./ProjectListPreview";
 
 export const ProjectList = () => {
 
@@ -11,7 +11,7 @@ export const ProjectList = () => {
 
     useEffect(() => {
         dispatch(loadProjects())
-    }, [projects])
+    }, [])
 
     return (
         <>
@@ -25,17 +25,11 @@ export const ProjectList = () => {
             </div>
             <div className="project-list-wrapper scroller">
                 {projects.map(project => (
-                    <div
-                        className="project-list-item"
-                        key={project._id}
-                    >
-                        <div className="list-item-field">{project.title}</div>
-                        <div className="list-item-field">{project.importance}</div>
-                        <div className="list-item-field"> {new Date(project.startDate).toLocaleDateString()}</div>
-                        <div className="list-item-field">{new Date(project.endDate).toLocaleDateString() }</div>
-                        <div className="list-item-field"> {project.members}</div>
-                        <div className="list-item-field"> {new Date(project.lastChanged).toLocaleString()}</div>
-                    </div>
+                    <Link to={`/projectspace/project/${project._id}`}  key={project._id} >
+                        <ProjectListPreview
+                            project={project}
+                        />
+                    </Link>
                 ))}
             </div>
         </>

@@ -2,7 +2,8 @@ import { userService } from '../../services/user.service.js'
 
 const initialState = {
     projectspace: [],
-    loggedInUser: userService.getLoggedinUser(),
+    // loggedInUser: userService.getLoggedinUser(),
+    loggedInUser: 'dkatorza',
     loginErr: null,
     currPopover: {
         name: ''

@@ -1,16 +1,21 @@
-// import { Home } from './pages/Home'
+import { Home } from './pages/Home'
+import { ProjectDetails } from './pages/ProjectDetails'
 import { Projectspace } from './pages/Projectspace'
-// import { ProjectApp } from './pages/ProjectApp'
+
 
 export const routes = [
-   
 
     {
         path: '/',
-        component: <Projectspace/>
+        component: <Home/>,
     },
-    // {
-    //     path: '/',
-    //     component: Home,
-    // }
+    {
+        path: '/projectspace',
+        component: <Projectspace />
+    },
+    {
+        path: 'projectspace/project/:id',
+        component: <ProjectDetails />
+    }
+
 ]

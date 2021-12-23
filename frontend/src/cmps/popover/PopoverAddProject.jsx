@@ -14,12 +14,11 @@ export const PopoverAddProject = () => {
     const [msg, setMsg] = useState('')
 
     const onClosePopover = () => {
-        console.log('close');
         dispatch(closePopover())
     }
 
     const onCreateProject = async () => {
-        if (!title, !startDate, !endDate) {
+        if (!title || !startDate || !endDate) {
             setMsg('*All fields are required!')
             return
         }

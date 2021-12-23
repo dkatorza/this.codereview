@@ -13,9 +13,9 @@ export function projectReducer(state = initialState, action) {
         case 'SET_PROJECTS':
             return { ...state, projects: action.projects }
         case 'SET_PROJECT':
-            return { ...state, project: action.project, isLoading: false }
+            return { ...state, project: action.project}
         case 'SAVE_PROJECT':
-            return { ...state, project: { ...action.project } }
+            return { ...state, projects: [...state.projects,action.project]   }
         case 'SET_FILTER':
             return { ...state, filterBy: action.filterBy }
         default:

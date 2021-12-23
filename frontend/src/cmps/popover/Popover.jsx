@@ -6,11 +6,9 @@ import { closePopover } from '../../store/actions/app.actions'
 
 export const Popover = ({ title, children }) => {
     const { isOverlayOpen } = useSelector(state => state.appModule)
-    console.log(isOverlayOpen);
     const dispatch = useDispatch()
 
     const onClosePopover = () => {
-        console.log('close');
         dispatch(closePopover())
     }
 
