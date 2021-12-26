@@ -1,0 +1,18 @@
+.project-details-wrapper {
+    height: calc(97vh);
+    // background-color: $bgrclr;
+    display: grid;
+    grid-template-rows: 0fr 7fr 1fr;
+    > * {
+        grid-column: 1;
+    }
+
+    > .full {
+        grid-column: 1 / -1;
+    }
+
+    grid-template-columns:
+        minmax(auto, 600px)
+        1fr
+        1fr;
+}

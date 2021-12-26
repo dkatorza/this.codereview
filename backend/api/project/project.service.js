@@ -18,7 +18,7 @@ async function query(filterBy = { ctg: '' }) {
 async function save(project) {
     const { title, createdBy, labels, members,
         codeReview, activities, importance,
-        startDate, endDate, lastChanged } = project
+        startDate, endDate, lastChanged} = project
     let savedProject
     if (project._id) {
         //UPDATE

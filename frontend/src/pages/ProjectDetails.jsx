@@ -1,23 +1,23 @@
-import { useEffect } from "react"
-import { useDispatch } from "react-redux"
-import { useLocation, useParams } from "react-router-dom"
-import { loadProject } from "../store/actions/project.actions"
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
+import { CRlist } from "../cmps/CRlist";
+import { loadProject } from "../store/actions/project.actions";
 
 export const ProjectDetails = () => {
-    const dispatch = useDispatch()
-    const params = useParams()
-    const {pathname} = useLocation()
+  const dispatch = useDispatch();
+  const params = useParams();
+  const { project } = useSelector((state) => state.projectModule);
 
-    useEffect(() => {
-        dispatch(loadProject(params.id))
-    }, [params.id])
+  useEffect(() => {
+    dispatch(loadProject(params.id));
+  }, [params.id]);
 
-    return (
-        <>
-            <h1>hello project id {`${params.id}`}</h1>
-            <h1>hello project location {pathname}</h1>
-            <h1></h1>
-        </>
-
-    )
-}
+  return (
+    <>
+      <section className='project-details-wrapper'>
+        <CRlist project={project} />
+      </section>
+    </>
+  );
+};

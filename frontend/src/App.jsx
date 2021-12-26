@@ -1,8 +1,8 @@
-import { Route, Routes } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux';
-import { PopoverHandler } from './cmps/popover/PopoverHandler';
-import { ProjectsHeader } from './cmps/ProjectsHeader';
-import { routes } from './routes'
+import { Route, Routes } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { PopoverHandler } from "./cmps/popover/PopoverHandler";
+import { ProjectsHeader } from "./cmps/ProjectsHeader";
+import { routes } from "./routes";
 
 function App() {
   return (
@@ -12,7 +12,13 @@ function App() {
       </header>
       <main>
         <Routes>
-          {routes.map(route => <Route key={route.path} element={route.component} path={route.path} />)}
+          {routes.map((route) => (
+            <Route
+              key={route.path}
+              element={route.component}
+              path={route.path}
+            />
+          ))}
         </Routes>
         <PopoverHandler />
       </main>
