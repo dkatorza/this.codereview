@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import { BreadCrumbs } from "../cmps/Breadcrumbs";
 import { CRlist } from "../cmps/CRlist";
 import { loadProject } from "../store/actions/project.actions";
 
@@ -15,6 +16,7 @@ export const ProjectDetails = () => {
 
   return (
     <>
+      <BreadCrumbs />
       <section className='project-details-wrapper'>
         <CRlist project={project} />
       </section>

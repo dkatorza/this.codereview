@@ -1,9 +1,10 @@
+import { BreadCrumbs } from "../cmps/Breadcrumbs";
 import { ProjectList } from "../cmps/ProjectsList";
 
 export const Projectspace = () => {
   return (
     <>
-      <div className='bggg'></div>
+      <BreadCrumbs />
       <section className='project-space-wrapper'>
         <ProjectList />
       </section>

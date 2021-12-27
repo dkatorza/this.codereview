@@ -7,13 +7,11 @@ export const ProjectBar = () => {
   const dispatch = useDispatch();
 
   const onOpenPopover = (popoverName) => {
-    console.log("popoverName", popoverName);
     dispatch(openPopover(popoverName));
   };
 
   return (
     <>
-      <BreadCrumbs />
       <div
         className='project-add-wrapper'
         onClick={() => onOpenPopover("CREATE_PROJECT")}>

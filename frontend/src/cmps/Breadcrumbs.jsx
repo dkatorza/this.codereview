@@ -1,7 +1,5 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { ReactComponent as PathTcrIcon } from "../assets/img/path-tcr.svg";
 import { ReactComponent as PathProjectsIcon } from "../assets/img/path-project.svg";
 import { ReactComponent as PathFileIcon } from "../assets/img/path-file.svg";
@@ -11,8 +9,7 @@ export const BreadCrumbs = () => {
   const { loggedInUser } = useSelector((state) => state.appModule); // for now with dummy username
   const { project } = useSelector((state) => state.projectModule);
   const { pathname } = useLocation();
-
-  useEffect(() => {}, [pathname]);
+  const params = useParams();
 
   return (
     <div className='breadcrumbs-wrapper'>
@@ -41,7 +38,10 @@ export const BreadCrumbs = () => {
       {pathname.includes("/cr") && (
         <div className='path-project-cr'>
           <PathCRIcon className='icons' />
-          <span>democr</span>
+          <span>
+            #cr:{">>"}
+            {params.cr_id}
+          </span>
         </div>
       )}
     </div>
