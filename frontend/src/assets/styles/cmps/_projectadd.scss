@@ -1,13 +1,12 @@
-.project-add-wrapper{
-    .svg{
-        fill: $clrYellowlight;
-        width: 65px;
-        height: 65px;
-        display: flex;
-        align-items: center;
+.project-add-wrapper {
+  .svg {
+    fill: $clrYellowlight;
+    width: 65px;
+    height: 65px;
+    display: flex;
 
-        &:hover{
-           fill: $clrLightgreen; 
-        }
+    &:hover {
+      fill: $clrLightgreen;
     }
+  }
 }

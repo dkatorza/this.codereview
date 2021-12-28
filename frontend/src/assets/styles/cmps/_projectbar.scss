@@ -1,10 +1,9 @@
-.project-bar{
-    display: grid;
-    align-items: end;
-    padding: 0.5rem;
-    column-gap: 0.5rem;
-    grid-template-columns:
-        1fr
-        minmax(auto, auto);
-       
+.project-bar {
+  min-height: 65px;
+  display: grid;
+  padding: 1rem;
+  row-gap: 0.5rem;
+  grid-template-columns:
+    minmax(auto, 1fr)
+    minmax(auto, auto);
 }

@@ -1,62 +1,62 @@
 .cr-list-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  //   margin-right: 1rem;
+  overflow-y: auto;
+  max-height: 500px;
+
+  .wrapper-margin {
     margin-right: 1rem;
-    overflow-y: auto;
-    max-height: 500px;
+  }
 
+  .cr-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $clrBlackExtra;
+    margin-bottom: 0.5rem;
+    min-height: 80px;
+    padding: 0.5rem;
+    cursor: pointer;
 
-    .cr-list-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $clrBlackExtra;
-        margin-bottom: 0.5rem;
-        min-height: 80px;
-        padding: 0.5rem;
-        cursor: pointer;
-
-        &:hover{
-            background-color: $clrYellowlight;
-            color: $clrBlack;
-            transition:all .5s ease-in-out;
-        }
-
-        .list-item-field{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
+    &:hover {
+      background-color: $clrYellowlight;
+      color: $clrBlack;
+      transition: all 0.5s ease-in-out;
     }
 
+    .list-item-field {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
 }
 
-.cr-list-header{
+.cr-list-header {
+  display: flex;
+  padding: 0 0.5rem;
+  background-color: $clrLightgreen;
+  min-height: 50px;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  & > .list-header-item {
+    width: 100%;
+    color: $clrBlack;
     display: flex;
-    padding:0 0.5rem;
-    background-color:$clrLightgreen ;
-    min-height: 50px;
-    margin-bottom: 0.5rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: rem(20px);
+    cursor: pointer;
 
-    & > .list-header-item{
-        width: 100%;
-        color: $clrBlack;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        font-size: rem(20px);
-        cursor: pointer;
-
-        &:hover {
-            font-weight: 600;
-            background-color: $clrRedish;
-            transition:.2s ease-in-out;
-         
-        }
-
+    &:hover {
+      font-weight: 600;
+      background-color: $clrRedish;
+      transition: 0.2s ease-in-out;
     }
+  }
 }

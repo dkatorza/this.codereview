@@ -14,11 +14,6 @@ export const ProjectsHeader = () => {
           <HeaderNavbar />
         </div>
       </div>
-      <div className='header-wrapper-bottom'>
-        <div className='project-bar'>
-          <ProjectBar />
-        </div>
-      </div>
     </section>
   );
 };

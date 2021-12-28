@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loadProjects } from "../store/actions/project.actions";
 import { ProjectListPreview } from "./ProjectListPreview";
@@ -7,10 +7,22 @@ import { ProjectListPreview } from "./ProjectListPreview";
 export const ProjectList = () => {
   const dispatch = useDispatch();
   const { projects } = useSelector((state) => state.projectModule);
+  const [tableMargin, setTableMargin] = useState(false);
+  const listwrapper = useRef(null);
 
   useEffect(() => {
     dispatch(loadProjects());
   }, []);
+
+  useEffect(() => {
+    checkScrollHeight();
+  }, [projects]);
+
+  const checkScrollHeight = () => {
+    if (listwrapper.current.scrollHeight > 600) {
+      setTableMargin("1rem");
+    }
+  };
 
   return (
     <>
@@ -22,7 +34,10 @@ export const ProjectList = () => {
         <div className='list-header-item'>Members</div>
         <div className='list-header-item'>Last changed</div>
       </div>
-      <div className='project-list-wrapper scroller'>
+      <div
+        className='project-list-wrapper scroller'
+        style={{ marginRight: `${tableMargin}` }}
+        ref={listwrapper}>
         {projects.map((project) => (
           <Link to={`/projectspace/project/${project._id}`} key={project._id}>
             <ProjectListPreview project={project} />
