@@ -9,12 +9,12 @@
 @import "./basics/base.scss";
 @import "./basics/buttons.scss";
 
-//Pages 
+//Pages
 @import "./pages/projectspace.scss";
 @import "./pages/projectdetails.scss";
 @import "./pages/crdetails.scss";
 
-//Cmps 
+//Cmps
 @import "./cmps/projectsheader.scss";
 @import "./cmps/headernavbar.scss";
 @import "./cmps/projectadd.scss";
@@ -25,3 +25,4 @@
 @import "./cmps/popover-add-project.scss";
 @import "./cmps/screen-overlay.scss";
 @import "./cmps/crlist.scss";
+@import "./cmps/projectdashboard.scss";

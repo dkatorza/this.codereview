@@ -1,8 +1,7 @@
 .cr-list-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
-  //   margin-right: 1rem;
+  padding: 0 1rem;
   overflow-y: auto;
   max-height: 500px;
 
@@ -14,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $clrBlackExtra;
+    background-color: $clrBlackTrans;
     margin-bottom: 0.5rem;
     min-height: 80px;
     padding: 0.5rem;

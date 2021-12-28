@@ -1,0 +1,40 @@
+.project-dashboard {
+  .project-dashboard-header {
+    display: flex;
+    padding: 0 0.5rem;
+    background-color: $clrRedish;
+    min-height: 50px;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    & > .list-header-item {
+      width: 100%;
+      color: $clrWhite;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      font-size: rem(20px);
+      cursor: pointer;
+    }
+  }
+
+  .project-dashboard-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    overflow-y: auto;
+
+    .project-dashboard-board {
+      background-color: rgba(0, 0, 0, 0.383);
+      margin-bottom: 0.5rem;
+      min-height: 700px;
+      padding: 0.5rem;
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}

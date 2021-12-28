@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { CRlist } from "../cmps/CRlist";
 import { ProjectBar } from "../cmps/ProjectBar";
+import { ProjectDashboard } from "../cmps/ProjectDashboard";
 import { loadProject } from "../store/actions/project.actions";
 
 export const ProjectDetails = () => {
@@ -18,7 +19,12 @@ export const ProjectDetails = () => {
     <>
       <ProjectBar />
       <section className='project-details-wrapper'>
-        <CRlist project={project} />
+        <div>
+          <CRlist project={project} />
+        </div>
+        <div>
+          <ProjectDashboard />
+        </div>
       </section>
     </>
   );

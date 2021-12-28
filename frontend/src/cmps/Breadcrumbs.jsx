@@ -30,7 +30,7 @@ export const BreadCrumbs = () => {
           <PathFileIcon className='icons' />
           <span>
             <Link to={`/projectspace/project/${project?._id}`}>
-              {project?.title}
+              project:{">>"}[{project?.title}]
             </Link>
           </span>
         </div>

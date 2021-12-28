@@ -1,11 +1,7 @@
 .project-details-wrapper {
   height: calc(97vh);
-  // background-color: $bgrclr;
   display: grid;
-  grid-template-rows: 0fr 7fr 1fr;
-  > * {
-    grid-column: 1;
-  }
+  grid-template-rows: 1fr;
 
   > .full {
     grid-column: 1 / -1;
@@ -13,6 +9,5 @@
 
   grid-template-columns:
     minmax(auto, 1000px)
-    1fr
     1fr;
 }
