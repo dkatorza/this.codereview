@@ -1,0 +1,12 @@
+.dashboard-todo {
+  display: flex;
+  flex-direction: column;
+
+  & > li {
+    display: flex;
+    width: 300px;
+    padding: 0.5rem;
+    background-color: $clrBlackTrans;
+    margin-bottom: 0.5rem;
+  }
+}

@@ -32,9 +32,23 @@
       background-color: rgba(0, 0, 0, 0.383);
       margin-bottom: 0.5rem;
       min-height: 700px;
+      max-height: 700px;
       padding: 0.5rem;
       width: 100%;
-      cursor: pointer;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      grid-template-rows:
+        minmax(auto, 200px)
+        minmax(auto, 250px)
+        minmax(auto, 200px);
+      grid-column-gap: 0.5rem;
+      grid-row-gap: 0.5rem;
+
+      .log {
+        grid-area: 2 / 2 / 4 / 3;
+      }
     }
   }
 }

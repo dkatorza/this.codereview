@@ -1,49 +1,52 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-family: Poppins-Regular;
-    color: $clrWhite;
+  font-family: Poppins-Regular;
+  color: $clrWhite;
 }
 
 body {
-    position: relative;
-    z-index: 1;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: rgb(0,0,0);
-    // background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgb(3, 36, 49) 35%, rgb(10, 4, 10) 89%, rgba(0,0,0,1) 100%);
-    background-image: url('../../img/bgglass4.jpg');
-    background-repeat:no-repeat;
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-attachment: fixed; 
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgb(0, 0, 0);
+  // background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgb(3, 36, 49) 35%, rgb(10, 4, 10) 89%, rgba(0,0,0,1) 100%);
+  background-image: url("../../img/bgglass4.jpg");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.doneHighlight {
+  color: greenyellow;
 }
 
 body::before {
-    content: '';
-    position: absolute;
-    z-index:-1 ;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    filter: blur(25px);
-    background: inherit;
-    box-shadow: inset 0 0 0 3000px rgba(36, 36, 36, 0.829);
-    margin: -50px;
-    backdrop-filter: blur(15px); // only on chrome (that why i set above filter: blur(25px) as a fallout
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(25px);
+  background: inherit;
+  box-shadow: inset 0 0 0 3000px rgba(36, 36, 36, 0.829);
+  margin: -50px;
+  backdrop-filter: blur(
+    15px
+  ); // only on chrome (that why i set above filter: blur(25px) as a fallout
 }
 
-
-
 img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 h1,
@@ -52,75 +55,73 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 400;
-    font-family: Kanit;
-    text-transform: capitalize;
-    font-family: Poppins-Regular;
+  font-weight: 400;
+  font-family: Kanit;
+  text-transform: capitalize;
+  font-family: Poppins-Regular;
 }
 
 li {
-    list-style: none;
-    font-family: Poppins-Regular;
+  list-style: none;
+  font-family: Poppins-Regular;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 .button {
-    background-color: $primary;
-    margin-left: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: rem(16px);
-    font-weight: 600;
-    color: $clrWhite;
-    cursor: pointer;
+  background-color: $primary;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(16px);
+  font-weight: 600;
+  color: $clrWhite;
+  cursor: pointer;
 
-    &:hover {
-        background-color: $primaryHover;
-        transition: 0.4s;
-    }
+  &:hover {
+    background-color: $primaryHover;
+    transition: 0.4s;
+  }
 }
 
-
 input {
-    background-color: transparent;
-    border: 1px solid $clrGold;
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem 1rem;
-    color: $clrWhite;
-    font-weight: 400;
-    font-size: rem(18px);
+  background-color: transparent;
+  border: 1px solid $clrGold;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  color: $clrWhite;
+  font-weight: 400;
+  font-size: rem(18px);
 
-    &:focus {
-        outline: none !important;
-        border: 2px solid $clrGold;
-      
-    }
-    ///* Chrome, Firefox, Opera, Safari 10.1+ */
-    &::placeholder {
-        color: $clrGoldalpha;
-        opacity: 1;
-    }
+  &:focus {
+    outline: none !important;
+    border: 2px solid $clrGold;
+  }
+  ///* Chrome, Firefox, Opera, Safari 10.1+ */
+  &::placeholder {
+    color: $clrGoldalpha;
+    opacity: 1;
+  }
 
-    /* Internet Explorer 10-11 */
-    &:-ms-input-placeholder {
-        color: $clrGoldalpha;
-    }
+  /* Internet Explorer 10-11 */
+  &:-ms-input-placeholder {
+    color: $clrGoldalpha;
+  }
 
-    /* Microsoft Edge */
-    ::-ms-input-placeholder {
-        color: $clrGoldalpha;
-    }
+  /* Microsoft Edge */
+  ::-ms-input-placeholder {
+    color: $clrGoldalpha;
+  }
 
-    &:hover {
-        border: 2px solid $clrGold;
-        transition: 0.2s;
-    }
+  &:hover {
+    border: 2px solid $clrGold;
+    transition: 0.2s;
+  }
 }
 
 // .svg {
@@ -134,24 +135,18 @@ input {
 // }
 
 .scroller {
-    &::-webkit-scrollbar {
-        width: 8px;
+  &::-webkit-scrollbar {
+    width: 8px;
 
-        
     @include for-mobile-layout {
-        width:0;
+      width: 0;
     }
-  
-       
-    }
-    &::-webkit-scrollbar-track {
-        margin-bottom: 14px;
-        background-color: $clrGold;
-
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: $clrRedish;
-
-    }
-
+  }
+  &::-webkit-scrollbar-track {
+    margin-bottom: 14px;
+    background-color: $clrGold;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $clrRedish;
+  }
 }
