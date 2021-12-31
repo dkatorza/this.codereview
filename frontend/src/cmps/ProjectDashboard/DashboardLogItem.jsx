@@ -6,11 +6,11 @@ export const DashboardLogItem = ({ text }) => {
 
   useEffect(() => {
     setTextColor();
-  }, []);
+  });
 
   useEffect(() => {
     setTextCriteria();
-  }, []);
+  });
 
   const setTextCriteria = () => {
     if (text.includes("Done")) {
@@ -24,14 +24,14 @@ export const DashboardLogItem = ({ text }) => {
     }
   };
 
-  const regex = new RegExp(`(${criteria})`, "gi");
-  const parts = text.split(regex);
-
   const setTextColor = () => {
     if (criteria == "Done") setStyle("SpringGreen");
     if (criteria == "In work") setStyle("Cyan");
     if (criteria == "Opend Issue") setStyle("tomato");
   };
+
+  const regex = new RegExp(`(${criteria})`, "gi");
+  const parts = text.split(regex);
 
   return (
     <ul>

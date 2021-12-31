@@ -1,7 +1,7 @@
-import { useEffect, useRef } from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { CRlistPreview } from "./CRlistPreview";
+import { useEffect, useRef } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { CRlistPreview } from './CRlistPreview';
 
 export const CRlist = ({ project }) => {
   useEffect(() => {
@@ -12,8 +12,8 @@ export const CRlist = ({ project }) => {
   const listwrapper = useRef(null);
 
   const checkScrollHeight = () => {
-    if (listwrapper.current.scrollHeight > 500) {
-      setTableMargin("1rem");
+    if (listwrapper.current.scrollHeight > 700) {
+      setTableMargin('1rem');
     }
   };
 
@@ -25,7 +25,11 @@ export const CRlist = ({ project }) => {
         <div className='list-header-item'>Members</div>
         <div className='list-header-item'>Due date</div>
         <div className='list-header-item'>Status</div>
-        <div className='list-header-item'>Last changed</div>
+        <div
+          className='list-header-item'
+          style={{ marginRight: `${tableMargin}` }}>
+          Last changed
+        </div>
       </div>
       <div
         className='cr-list-wrapper scroller'

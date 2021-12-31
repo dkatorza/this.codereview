@@ -1,74 +1,19 @@
-import * as React from "react";
 import Avatar from "@mui/material/Avatar";
+import { useSelector } from "react-redux";
 
 export const Avatars = () => {
+  const { members } = useSelector((state) => state.projectModule.project);
+
   return (
     <div className='members'>
-      <Avatar
-        alt='Remy Sharp'
-        src='/static/images/avatar/1.jpg'
-        className='avatar'
-      />
-      <Avatar
-        alt='Remy Sharp'
-        src='/static/images/avatar/1.jpg'
-        className='avatar'
-      />
-      <Avatar
-        alt='Remy Sharp'
-        src='/static/images/avatar/1.jpg'
-        className='avatar'
-      />
-      <Avatar
-        alt='Remy Sharp'
-        src='/static/images/avatar/1.jpg'
-        className='avatar'
-      />
-      <Avatar
-        alt='Remy Sharp'
-        src='/static/images/avatar/1.jpg'
-        className='avatar'
-      />
-      <Avatar
-        alt='Remy Sharp'
-        src='/static/images/avatar/1.jpg'
-        className='avatar'
-      />
-      <Avatar
-        alt='Remy Sharp'
-        src='/static/images/avatar/1.jpg'
-        className='avatar'
-      />
-      <Avatar
-        alt='Remy Sharp'
-        src='/static/images/avatar/1.jpg'
-        className='avatar'
-      />
-      <Avatar
-        alt='Remy Sharp'
-        src='/static/images/avatar/1.jpg'
-        className='avatar'
-      />
-      <Avatar
-        alt='Remy Sharp'
-        src='/static/images/avatar/1.jpg'
-        className='avatar'
-      />
-      <Avatar
-        alt='Remy Sharp'
-        src='/static/images/avatar/1.jpg'
-        className='avatar'
-      />
-      <Avatar
-        alt='Remy Sharp'
-        src='/static/images/avatar/1.jpg'
-        className='avatar'
-      />
-      <Avatar
-        alt='Remy Sharp'
-        src='/static/images/avatar/1.jpg'
-        className='avatar'
-      />
+      {members.map((member, idx) => (
+        <Avatar
+          key={idx}
+          alt={member.fullname}
+          src={member.imgUrl}
+          className='avatar'
+        />
+      ))}
     </div>
   );
 };

@@ -1,6 +1,7 @@
-import { Avatars } from "../Avatars";
+import { DashboardDetails } from "./DashboardDetails";
 import { DashboardLog } from "./DashboardLog";
-import { DashboardTodo } from "./DashboardTodo";
+import { DashboardMembers } from "./DashboardMembers";
+import { DashboardTasks } from "./DashboardTasks";
 
 export const ProjectDashboard = ({ project }) => {
   if (!project) return <div>loading...</div>;
@@ -12,38 +13,11 @@ export const ProjectDashboard = ({ project }) => {
         </div>
         <div className='project-dashboard-wrapper'>
           <div className='project-dashboard-board'>
-            <div className='1'>
-              <ul>
-                <li>Project: {project.title}</li>
-                <li>
-                  Created At: {new Date(project.createdAt).toLocaleDateString()}
-                </li>
-                <li>Created By: {project.createdBy}</li>
-                <li>Stack:</li>
-                <li>
-                  Start Date: {new Date(project.startDate).toLocaleDateString()}
-                </li>
-                <li>
-                  End Date: {new Date(project.endDate).toLocaleDateString()}
-                </li>
-                <li>
-                  Progress: <progress id='test' value='32' max='100' />
-                </li>
-              </ul>
-            </div>
-            <div>
-              Members:
-              <Avatars />
-            </div>
-            <div className='3'>
-              Recent tasks:
-              <DashboardTodo />
-            </div>
-            <div className='log'>
-              Log:
-              <DashboardLog />
-            </div>
-            <div className='5'>
+            <DashboardDetails />
+            <DashboardMembers />
+            <DashboardTasks />
+            <DashboardLog />
+            {/* <div className='project-notes'>
               Notes
               <ul>
                 <li>Project:</li>
@@ -53,7 +27,7 @@ export const ProjectDashboard = ({ project }) => {
                 <li>Start Date:</li>
                 <li>End Date:</li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

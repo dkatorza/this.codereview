@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { useState } from "react";
 import { useSelector } from "react-redux";
 import { DashboardLogItem } from "./DashboardLogItem";
 
@@ -9,10 +7,11 @@ export const DashboardLog = () => {
   );
 
   return (
-    <>
+    <div className='log'>
+      Log:
       {activities.map((activity, idx) => (
-        <DashboardLogItem text={activity} key={idx} highlight={"Done"} />
+        <DashboardLogItem text={activity} key={idx} />
       ))}
-    </>
+    </div>
   );
 };

@@ -1043,3 +1043,4 @@
 27/12/2021, 9:46:41 - ERROR - Failed to get project | BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters (sid: 2fBaUvC5Qzwg463hQHlUNK9_t3Ofvv0K)
 28/12/2021, 12:48:57 - INFO - Server is running on port: 3030 
 30/12/2021, 7:06:32 - INFO - Server is running on port: 3030 
+31/12/2021, 10:21:40 - INFO - Server is running on port: 3030 
