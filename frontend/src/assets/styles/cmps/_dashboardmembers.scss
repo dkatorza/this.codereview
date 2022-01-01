@@ -1,11 +1,18 @@
-.members {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  padding: 0.5rem;
+.dashboard-members-wrapper {
+  h4 {
+    font-weight: 600;
+    // background-color: $clrBlackTrans;
+    color: $clrRedish;
+  }
 
-  & > .avatar {
-    margin: 0 5px 5px;
+  .members {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    & > .avatar {
+      margin: 0 5px 5px;
+    }
   }
 }

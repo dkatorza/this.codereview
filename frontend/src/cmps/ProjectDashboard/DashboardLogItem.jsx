@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export const DashboardLogItem = ({ text }) => {
-  const [style, setStyle] = useState("");
-  const [criteria, setCriteria] = useState("");
+  const [style, setStyle] = useState('');
+  const [criteria, setCriteria] = useState('');
 
   useEffect(() => {
     setTextColor();
@@ -13,24 +13,24 @@ export const DashboardLogItem = ({ text }) => {
   });
 
   const setTextCriteria = () => {
-    if (text.includes("Done")) {
-      setCriteria("Done");
+    if (text.includes('Done')) {
+      setCriteria('Done');
     }
-    if (text.includes("In work")) {
-      setCriteria("In work");
+    if (text.includes('In work')) {
+      setCriteria('In work');
     }
-    if (text.includes("Opend Issue")) {
-      setCriteria("Opend Issue");
+    if (text.includes('Opend Issue')) {
+      setCriteria('Opend Issue');
     }
   };
 
   const setTextColor = () => {
-    if (criteria == "Done") setStyle("SpringGreen");
-    if (criteria == "In work") setStyle("Cyan");
-    if (criteria == "Opend Issue") setStyle("tomato");
+    if (criteria == 'Done') setStyle('SpringGreen');
+    if (criteria == 'In work') setStyle('Cyan');
+    if (criteria == 'Opend Issue') setStyle('tomato');
   };
 
-  const regex = new RegExp(`(${criteria})`, "gi");
+  const regex = new RegExp(`(${criteria})`, 'gi');
   const parts = text.split(regex);
 
   return (

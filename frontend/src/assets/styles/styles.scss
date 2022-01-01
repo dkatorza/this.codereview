@@ -1,30 +1,32 @@
-@import "./setup/variables.scss";
-@import "./setup/functions.scss";
-@import "./setup/mixins.scss";
-@import "./setup/typography.scss";
+@import './setup/variables.scss';
+@import './setup/functions.scss';
+@import './setup/mixins.scss';
+@import './setup/typography.scss';
 
 // Basics
-@import "./basics/helpers.scss";
-@import "./basics/layout.scss";
-@import "./basics/base.scss";
-@import "./basics/buttons.scss";
+@import './basics/helpers.scss';
+@import './basics/layout.scss';
+@import './basics/base.scss';
+@import './basics/buttons.scss';
 
 //Pages
-@import "./pages/projectspace.scss";
-@import "./pages/projectdetails.scss";
-@import "./pages/crdetails.scss";
+@import './pages/projectspace.scss';
+@import './pages/projectdetails.scss';
+@import './pages/crdetails.scss';
 
 //Cmps
-@import "./cmps/projectsheader.scss";
-@import "./cmps/headernavbar.scss";
-@import "./cmps/projectadd.scss";
-@import "./cmps/projectbar.scss";
-@import "./cmps/breadcrumbs.scss";
-@import "./cmps/projectlist.scss";
-@import "./cmps/popover.scss";
-@import "./cmps/popover-add-project.scss";
-@import "./cmps/screen-overlay.scss";
-@import "./cmps/crlist.scss";
-@import "./cmps/projectdashboard.scss";
-@import "./cmps/dashboardmembers.scss";
-@import "./cmps/dashboardtodo.scss";
+@import './cmps/projectsheader.scss';
+@import './cmps/headernavbar.scss';
+@import './cmps/projectadd.scss';
+@import './cmps/projectbar.scss';
+@import './cmps/breadcrumbs.scss';
+@import './cmps/projectlist.scss';
+@import './cmps/popover.scss';
+@import './cmps/popover-add-project.scss';
+@import './cmps/screen-overlay.scss';
+@import './cmps/crlist.scss';
+@import './cmps/projectdashboard.scss';
+@import './cmps/dashboardmembers.scss';
+@import './cmps/dashboardtodo.scss';
+@import './cmps/dashboardlog.scss';
+@import './cmps/dashboarddetails.scss';

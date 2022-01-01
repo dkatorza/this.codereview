@@ -1,0 +1,11 @@
+.dashboard-log-wrapper {
+  h4 {
+    font-weight: 600;
+    color: $clrLightgreen;
+  }
+
+  .log-list {
+    max-height: 430px;
+    overflow-y: auto;
+  }
+}

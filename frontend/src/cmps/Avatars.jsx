@@ -1,5 +1,5 @@
-import Avatar from "@mui/material/Avatar";
-import { useSelector } from "react-redux";
+import Avatar from '@mui/material/Avatar';
+import { useSelector } from 'react-redux';
 
 export const Avatars = () => {
   const { members } = useSelector((state) => state.projectModule.project);
