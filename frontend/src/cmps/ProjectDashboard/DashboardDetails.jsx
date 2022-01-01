@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { DashboardStack } from './DashboardStack';
 
 export const DashboardDetails = () => {
   const { project } = useSelector((state) => state.projectModule);
@@ -16,7 +17,7 @@ export const DashboardDetails = () => {
           <h4>Created By:</h4> {project.createdBy}
         </li>
         <li>
-          <h4>Stack:</h4>
+          <h4>Stack:</h4> <DashboardStack />
         </li>
         <li>
           <h4>Start Date:</h4>
@@ -26,7 +27,7 @@ export const DashboardDetails = () => {
           <h4>End Date</h4>: {new Date(project.endDate).toLocaleDateString()}
         </li>
         <li>
-          <h4>Importance:</h4> {project.importance}
+          <h4>Importance:</h4> {project.importance.level}
         </li>
         <li>
           <h4>Progress:</h4> <progress id='test' value='32' max='100' />

@@ -1,0 +1,16 @@
+.dashboard-stack-wrapper {
+  width: 100%;
+  display: flex;
+  max-height: 20px;
+  justify-content: flex-start;
+  align-items: center;
+
+  .svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .fill-white {
+    fill: $clrWhite;
+  }
+}

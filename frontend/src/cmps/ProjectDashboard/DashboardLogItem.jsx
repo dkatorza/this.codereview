@@ -13,37 +13,40 @@ export const DashboardLogItem = ({ text }) => {
   });
 
   const setTextCriteria = () => {
-    if (text.includes('Done')) {
+    if (text.text.includes('Done')) {
       setCriteria('Done');
     }
-    if (text.includes('In work')) {
+    if (text.text.includes('In work')) {
       setCriteria('In work');
     }
-    if (text.includes('Opend Issue')) {
+    if (text.text.includes('Opend Issue')) {
       setCriteria('Opend Issue');
     }
   };
 
   const setTextColor = () => {
-    if (criteria == 'Done') setStyle('SpringGreen');
-    if (criteria == 'In work') setStyle('Cyan');
-    if (criteria == 'Opend Issue') setStyle('tomato');
+    if (criteria === 'Done') setStyle('SpringGreen');
+    if (criteria === 'In work') setStyle('Cyan');
+    if (criteria === 'Opend Issue') setStyle('tomato');
   };
 
   const regex = new RegExp(`(${criteria})`, 'gi');
-  const parts = text.split(regex);
+  const parts = text.text.split(regex);
 
   return (
     <ul>
-      <li>
+      <li style={{ fontSize: '14px' }}>
+        {'>> '}
+        {new Date(text.date).toLocaleDateString()}
+        {' - '}
         {parts &&
-          parts.filter(String).map((part, i) => {
+          parts.filter(String).map((part, idx) => {
             return regex.test(part) ? (
-              <span style={{ color: `${style}` }} key={i}>
+              <span style={{ color: `${style}` }} key={idx}>
                 {part}
               </span>
             ) : (
-              <span key={i}>{part}</span>
+              <span key={idx}>{part}</span>
             );
           })}
       </li>

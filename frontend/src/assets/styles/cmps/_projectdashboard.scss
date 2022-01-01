@@ -31,8 +31,8 @@
     .project-dashboard-board {
       background-color: rgba(0, 0, 0, 0.383);
       margin-bottom: 0.5rem;
-      min-height: 700px;
-      max-height: 700px;
+      min-height: 675px;
+      max-height: 675px;
       padding: 0.5rem;
       width: 100%;
 
@@ -44,6 +44,7 @@
         minmax(auto, 200px)
         minmax(auto, 250px)
         minmax(auto, 200px);
+
       grid-column-gap: 0.5rem;
       grid-row-gap: 0.5rem;
 

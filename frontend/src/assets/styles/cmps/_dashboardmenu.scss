@@ -1,0 +1,25 @@
+.dashboard-menu {
+  background-color: $clrBlackTrans;
+  width: 100%;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: center;
+
+  height: 25px;
+  color: $clrLightgreen;
+
+  h4 {
+    font-weight: 600;
+    padding: 0 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $clrGoldalpha;
+      transition: color 0.1s ease-in;
+    }
+    &:active {
+      border-bottom: 2px solid $clrRedish;
+      transition: border-bottom 0.1s ease-in;
+    }
+  }
+}

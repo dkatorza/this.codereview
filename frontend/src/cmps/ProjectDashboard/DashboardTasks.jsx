@@ -9,13 +9,13 @@ export const DashboardTasks = () => {
           <div
             className='checkbox'
             style={{ backgroundColor: '#bf72ff' }}></div>
-          <div className='title'>Task no.1</div>
+          <div className='title'>Daily team standup</div>
         </div>
         <div
           className='task-preview-wrapper'
           style={{ border: '1px solid aqua' }}>
           <div className='checkbox' style={{ backgroundColor: 'aqua' }}></div>
-          <div className='title'>Task no.2</div>
+          <div className='title'>Meeting with product...</div>
         </div>
         <div
           className='task-preview-wrapper'
@@ -23,7 +23,7 @@ export const DashboardTasks = () => {
           <div
             className='checkbox'
             style={{ backgroundColor: '#00ffba' }}></div>
-          <div className='title'>Task no.3</div>
+          <div className='title'>1on1 feedback</div>
         </div>
         <div
           className='task-preview-wrapper'
@@ -31,7 +31,7 @@ export const DashboardTasks = () => {
           <div
             className='checkbox'
             style={{ backgroundColor: '#ffb703' }}></div>
-          <div className='title'>Task no.4</div>
+          <div className='title'>Verify deplyment date</div>
         </div>
         <div
           className='task-preview-wrapper'
@@ -39,13 +39,13 @@ export const DashboardTasks = () => {
           <div
             className='checkbox'
             style={{ backgroundColor: '#ef476f' }}></div>
-          <div className='title'>Task no.5</div>
+          <div className='title'>Strategy meeting</div>
         </div>
         <div
           className='task-preview-wrapper'
           style={{ border: '1px solid aqua' }}>
           <div className='checkbox' style={{ backgroundColor: 'aqua' }}></div>
-          <div className='title'>Task no.6</div>
+          <div className='title'>Check roadmap</div>
         </div>
         <div
           className='task-preview-wrapper'
@@ -53,7 +53,7 @@ export const DashboardTasks = () => {
           <div
             className='checkbox'
             style={{ backgroundColor: '#ffb703' }}></div>
-          <div className='title'>Task no.7</div>
+          <div className='title'>Demo staging</div>
         </div>
         <div
           className='task-preview-wrapper'
@@ -61,7 +61,7 @@ export const DashboardTasks = () => {
           <div
             className='checkbox'
             style={{ backgroundColor: '#ef476f' }}></div>
-          <div className='title'>Task no.7</div>
+          <div className='title'>UX improvments</div>
         </div>
       </div>
     </div>
