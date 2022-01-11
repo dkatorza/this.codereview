@@ -1,7 +1,7 @@
 # this.codereview
 <h3>in progress..</h3>
 
-This.codereview is a managment app designed specificaly for code reviews. 
+This.codereview This.codereview is a management app designed specifically for code reviews. 
 My insipration for the design came from my terminal with Oh My Posh cmd design. 
 
 The background design for the body and the wrappers for the elements is transperent glass just like the terminal.
